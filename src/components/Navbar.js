@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
@@ -70,7 +71,13 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+                {item === 'Contact' ? (
+                  <Link to="/contact" style={{ textDecoration: 'none', color: '#FF1493' }}>
+                    {item}
+                  </Link>
+                ) : (
+                  item
+                )}
               </Button>
             ))}
           </Box>
