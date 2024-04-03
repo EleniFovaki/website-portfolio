@@ -50,7 +50,7 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" sx={{ bgcolor: 'black' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -71,8 +71,12 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
-                {item === 'Contact' ? (
-                  <Link to="/contact" style={{ textDecoration: 'none', color: '#FF1493' }}>
+                {item === 'Home' ? (
+                  <Link to="/" style={{ textDecoration: 'none', color: '#FFFFFF' }}>
+                    {item}
+                  </Link>
+                ) : item === 'Contact' ? (
+                  <Link to="/contact" style={{ textDecoration: 'none', color: '#FFFFFF' }}>
                     {item}
                   </Link>
                 ) : (
