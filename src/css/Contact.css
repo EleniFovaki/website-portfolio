@@ -1,0 +1,23 @@
+
+
+/* Set text color of headers to white 
+h1,
+h5 {
+    color: white;
+}*/
+
+/* Set text fields to white */
+.MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-input {
+    color: white;
+    background-color: white;
+}
+
+/* Change text field background color to light grey on hover */
+.MuiTextField-root .MuiOutlinedInput-root:hover .MuiOutlinedInput-input {
+    background-color: lightgrey;
+}
+
+/* Set button background color to light grey */
+.MuiButton-contained {
+    background-color: lightgrey;
+}
