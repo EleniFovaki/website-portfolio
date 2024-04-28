@@ -16,7 +16,7 @@ function Copyright(props) {
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
-        Your Website
+        EleniFovaki
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -41,16 +41,14 @@ function Contact() {
             alignItems: 'center',
           }}
         >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            {/* <LockOutlinedIcon /> */}
-          </Avatar>
+          
           <Typography component="h1" variant="h5">
             Get in touch.
           </Typography>
-          <Typography component="h2" variant="h5">
+          <Typography component="h2" variant="subtitle1">
             email@example.com
           </Typography>
-          <Typography component="h3" variant="h5">
+          <Typography component="h3" variant="subtitle2">
             (555) 555-5555
           </Typography>
           <Box component="form" noValidate  sx={{ mt: 3 }}>

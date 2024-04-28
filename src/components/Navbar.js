@@ -17,7 +17,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom'; // Import Link from React Router
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Home', 'Blog', 'Contact'];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -64,19 +64,23 @@ function DrawerAppBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontFamily:"Georgia, serif" }}
           >
             ELENI FOVAKI
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ display: { xs: 'none', sm: 'block' }, fontFamily: 'Georgia, serif' }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
                 {item === 'Home' ? (
-                  <Link to="/" style={{ textDecoration: 'none', color: '#FFFFFF' }}>
+                  <Link to="/" style={{ textDecoration: 'none', color: '#FFFFFF', fontFamily: 'Georgia, serif' }}>
+                    {item}
+                  </Link>
+                  ) : item === 'Blog' ? (
+                  <Link to="/blog" style={{ textDecoration: 'none', color: '#FFFFFF', fontFamily:"Georgia, serif" }}>
                     {item}
                   </Link>
                 ) : item === 'Contact' ? (
-                  <Link to="/contact" style={{ textDecoration: 'none', color: '#FFFFFF' }}>
+                  <Link to="/contact" style={{ textDecoration: 'none', color: '#FFFFFF', fontFamily:"Georgia, serif" }}>
                     {item}
                   </Link>
                 ) : (
