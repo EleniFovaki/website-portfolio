@@ -68,7 +68,7 @@ function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontFamily:"Georgia, serif" }}
           >
-            ELENI FOVAKI
+            Eleni Fovaki
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, fontFamily: 'Georgia, serif' }}>
             {navItems.map((item) => (

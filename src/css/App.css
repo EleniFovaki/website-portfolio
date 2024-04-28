@@ -6,12 +6,8 @@
 
 .content {
   text-align: center;
-  /* Center content horizontally */
-  margin-top: 50vh;
-  /* Move content 50% down the viewport */
-  transform: translateY(-50%);
-  /* Center content vertically */
-  margin-left: 50px;
+    margin-left: 20vh;
+  margin-right: 20vh;
   /* Adjust as needed */
 }
 
@@ -36,7 +32,6 @@
 }
 
 /* Navbar.css */
-
 .navbar {
   position: fixed;
   top: 0;
@@ -47,6 +42,21 @@
   z-index: 1000;
   /* Ensures the navbar is above other content */
 }
+
+.MuiSvgIcon-fontSizeMedium {
+  position: relative;
+  top: 6px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.MuiSvgIcon-fontSizeMedium {
+  position: relative;
+  top: 6px;
+  margin-left: 10px;
+  margin-right: 13px;
+}
+
 
 ul {
   list-style-type: none;
