@@ -14,6 +14,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom'; // Import Link from React Router
 
 const drawerWidth = 240;
@@ -88,6 +90,8 @@ function DrawerAppBar(props) {
                 )}
               </Button>
             ))}
+            <LinkedInIcon  />
+            <GitHubIcon  />
           </Box>
         </Toolbar>
       </AppBar>
