@@ -90,8 +90,12 @@ function DrawerAppBar(props) {
                 )}
               </Button>
             ))}
-            <LinkedInIcon  />
-            <GitHubIcon  />
+            <a href="https://www.linkedin.com/in/elenifovaki055" target="_blank" rel="noopener noreferrer">
+        <LinkedInIcon />
+      </a>
+            <a href="https://github.com/EleniFovaki" target="_blank" rel="noopener noreferrer">
+        <GitHubIcon />
+      </a>
           </Box>
         </Toolbar>
       </AppBar>
