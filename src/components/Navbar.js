@@ -72,17 +72,17 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, fontFamily: 'Georgia, serif' }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: '#fff'}}>
                 {item === 'Home' ? (
-                  <Link to="/" style={{ textDecoration: 'none', color: '#FFFFFF', fontFamily: 'Georgia, serif' }}>
+                  <Link to="/" style={{ textDecoration: 'none', color: '#FFFFFF', fontFamily: 'Georgia, serif', textTransform: 'none' }}>
                     {item}
                   </Link>
                   ) : item === 'Blog' ? (
-                  <Link to="/blog" style={{ textDecoration: 'none', color: '#FFFFFF', fontFamily:"Georgia, serif" }}>
+                  <Link to="/blog" style={{ textDecoration: 'none', color: '#FFFFFF', fontFamily:"Georgia, serif",textTransform: 'none' }}>
                     {item}
                   </Link>
                 ) : item === 'Contact' ? (
-                  <Link to="/contact" style={{ textDecoration: 'none', color: '#FFFFFF', fontFamily:"Georgia, serif" }}>
+                  <Link to="/contact" style={{ textDecoration: 'none', color: '#FFFFFF', fontFamily:"Georgia, serif",textTransform: 'none' }}>
                     {item}
                   </Link>
                 ) : (
