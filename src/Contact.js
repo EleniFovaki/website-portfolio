@@ -45,9 +45,6 @@ function Contact() {
           <Typography component="h1" variant="h5">
             Get in touch.
           </Typography>
-          <Typography component="h2" variant="subtitle1">
-            email@example.com
-          </Typography>
           <Box component="form" noValidate  sx={{ mt: 3 }}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
