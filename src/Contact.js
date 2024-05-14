@@ -1,5 +1,4 @@
 import React from 'react';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -9,6 +8,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import './css/Contact.css';
+import emailjs from '@emailjs/browser';
+
 
 
 function Copyright(props) {
@@ -25,11 +26,30 @@ function Copyright(props) {
 }
 
 
-
 function Contact() {
+   const sendEmail = (e) => {
+    e.preventDefault();
+
+    // Get form data
+    const formData = new FormData(e.target);
+    const firstName = formData.get('firstName');
+    const lastName = formData.get('lastName');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    // Send email
+    emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, e.target, {
+        publicKey: process.env.REACT_APP_EMAILJS_PUBLIC_KEY,
+      })
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+      }, (error) => {
+        console.error('Error sending email:', error.text);
+      });
+  };
+
   return (
     <div className='body'>
-      {/* <h2>Get in touch.</h2> */}
        
       <Container component="main" maxWidth="xs">
         <CssBaseline />
@@ -45,7 +65,7 @@ function Contact() {
           <Typography component="h1" variant="h5">
             Get in touch.
           </Typography>
-          <Box component="form" noValidate  sx={{ mt: 3 }}>
+          <Box component="form" onSubmit={sendEmail} sx={{ mt: 3 }}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6}>
                 <TextField
@@ -87,12 +107,6 @@ function Contact() {
                   label="Message"
                 />
               </Grid>
-              {/* <Grid item xs={12}>
-                <FormControlLabel
-                  control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
-                />
-              </Grid> */}
             </Grid>
             <Button
               type="submit"

@@ -6,6 +6,7 @@ import Home from './Home'; // Import HomePage component
 import Contact from './Contact'; // Import ContactPage component
 
 function App() {
+  console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
   return (
     <BrowserRouter>
       <div>
