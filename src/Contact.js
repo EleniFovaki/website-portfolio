@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -27,6 +27,8 @@ function Copyright(props) {
 
 
 function Contact() {
+  const [emailSent, setEmailSent] = useState(null);
+
    const sendEmail = (e) => {
     e.preventDefault();
 
@@ -43,8 +45,12 @@ function Contact() {
       })
       .then((result) => {
         console.log('Email sent successfully:', result.text);
+        setEmailSent(true); // Set emailSent state to true
+        window.alert('Email sent successfully!');
       }, (error) => {
         console.error('Error sending email:', error.text);
+        setEmailSent(false); // Set emailSent state to false
+        window.alert('Error sending email. Please try again later.');
       });
   };
 
@@ -61,7 +67,6 @@ function Contact() {
             alignItems: 'center',
           }}
         >
-          
           <Typography component="h1" variant="h5">
             Get in touch.
           </Typography>
