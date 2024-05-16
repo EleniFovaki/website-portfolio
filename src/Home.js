@@ -1,21 +1,36 @@
 import React from 'react';
 import profilePic from './images/IMG_2405.jpg';
+import utrechtPic from './images/utrecht.jpg';
 
 function Home() {
   return (
     <div className="App">
       <div className="content">
-        <p className="description">Hello world! My name is Eleni Fovaki and I am a software engineer.
-          Most of my time, you will find me working or travelling.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        <p className="description">My name is Eleni Fovaki. I am the software engineer of this site and many others.
+You can check my Github account, via the github icon on the right front of this page, to get a glimpse of my projects. 
         </p>
         <div className="line">
           <p>
             I am currently available for collaborations.
           </p>
         </div>
+        <div className="line2">
+          <p>
+            My time is divided between the Netherlands and in Greece, but most likely in a window seat of an airplane.
+            Or in a court playing tennis.
+          </p>
+        </div>
         <img src={profilePic} alt="Profile" />
-        <p className="additional-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat magna id lorem dictum, et consequat nisi efficitur.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p className="additional-info">After graduating from the Technological Institute of Crete, I moved to Athens, which is my hometown, to pursue a carreer in web-development.
+After 3 years of learning and developing my programming skills, I moved to the Netherlands, to explore what the country had to offer for us programmers.
+It did not dissapoint me. But most importantly, as the Dutch say, the point is to not disappoint yourself.</p>
       </div>
+      <img src={utrechtPic} alt="Utrecht" />
+      <div className="line3">
+          <p>
+            First iphone image of Utrecht.
+          </p>
+        </div>
     </div>
   );
 }
