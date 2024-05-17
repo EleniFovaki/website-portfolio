@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './Home'; // Import HomePage component
 import Contact from './Contact'; // Import ContactPage component
-
+import Blog from './Blog';
 
 function App() {
   console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
@@ -14,6 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home/>} /> {/* Render HomePage component for the root path */}
+          <Route path="/blog" element={<Blog/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
       </div>
