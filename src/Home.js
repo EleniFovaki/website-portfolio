@@ -21,7 +21,7 @@ You can check my Github account, via the github icon on the right front of this 
           </p>
         </div>
         <img src={profilePic} alt="Profile" />
-        <p className="additional-info">After graduating from the Technological Institute of Crete, I moved to Athens, which is my hometown, to pursue a carreer in web-development.
+        <p className="additional-info">After graduating from the Technological Institute of Crete, I moved back to Athens, which is my hometown, to pursue a carreer in web-development.
 After 3 years of learning and developing my programming skills, I moved to the Netherlands, to explore what the country had to offer for us programmers.
 It did not dissapoint me. But most importantly, as the Dutch say, the point is to not disappoint yourself.</p>
       </div>

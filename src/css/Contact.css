@@ -1,10 +1,20 @@
 
 
-/* Set text color of headers to white 
+/* Set text color of headers to white */
 h1,
 h5 {
     color: white;
-}*/
+}
+
+ .body {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 /* Set text fields to white */
 .MuiTextField-root .MuiOutlinedInput-root .MuiOutlinedInput-input {

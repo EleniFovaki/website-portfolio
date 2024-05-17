@@ -14,7 +14,7 @@ import emailjs from '@emailjs/browser';
 
 function Copyright(props) {
   return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
+    <Typography variant="body2" color="white" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="https://mui.com/">
         EleniFovaki
@@ -129,11 +129,6 @@ function Contact() {
               Send
             </Button>
             <Grid container justifyContent="flex-end">
-              {/* <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
-                </Link>
-              </Grid> */}
             </Grid>
           </Box>
         </Box>
