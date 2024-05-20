@@ -1,3 +1,29 @@
-.body {
+
+.blog {
     background-color: black;
+        height: 100%;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        min-height: 100vh;
+}
+
+.post h2 {
+    margin-top: 0;
+    color: white;
+}
+
+.post p {
+    color: white;
+}
+
+a {
+    color: #444648;
+    /* A shade of blue for the links */
+}
+
+a:hover {
+    color: #545555;
+    /* Lighter shade of blue on hover */
 }
