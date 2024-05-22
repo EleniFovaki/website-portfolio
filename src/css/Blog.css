@@ -1,16 +1,30 @@
-
 .blog {
     background-color: black;
-        height: 100%;
-        display: flex;
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
-        min-height: 100vh;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    /* Add some padding for better spacing */
 }
 
+.post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* .post {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+} */
+
 .post h2 {
-    margin-top: 0;
+    margin-top: 50px;
     color: white;
 }
 
@@ -19,11 +33,12 @@
 }
 
 a {
-    color: #444648;
-    /* A shade of blue for the links */
+    color: #999c9e;
+    /* Blue for the links */
+    text-decoration: none;
 }
 
 a:hover {
-    color: #545555;
+    color: #999c9e;
     /* Lighter shade of blue on hover */
 }

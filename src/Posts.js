@@ -4,14 +4,14 @@ import { useParams } from 'react-router-dom';
 const initialPosts = [
     {
         id: 1,
-        title: 'First Post',
+        title: 'Entry 01',
         date: new Date().toLocaleDateString(),
         preview: 'This is the preview of the first post...',
         content: 'Full content of the first post...'
     },
     {
         id: 2,
-        title: 'Second Post',
+        title: 'Entry 02',
         date: new Date().toLocaleDateString(),
         preview: 'This is the preview of the second post...',
         content: 'Full content of the second post...'
@@ -31,8 +31,8 @@ function Post() {
     return (
         <div className="post">
             <h2>{post.title}</h2>
-            <p>{post.date}</p>
-            <p>{post.content}</p>
+            <p1>{post.date}</p1>
+            <p2>{post.content}</p2>
         </div>
     );
 }
