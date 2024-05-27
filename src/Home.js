@@ -7,9 +7,9 @@ function Home() {
     <div className="App">
       <div className="content">
         <p className="description">My name is Eleni Fovaki. I am the software engineer of this site and many others.
-You can check my Github account, via the github icon on the right front of this page, to get a glimpse of my projects. 
+You can check my work from my Github account, via the github icon on the right front of this page, to get a glimpse of my projects. 
         </p>
-        <div className="line">
+        <div className="line1">
           <p>
             I am currently available for collaborations.
           </p>
@@ -25,7 +25,7 @@ You can check my Github account, via the github icon on the right front of this 
 After 3 years of learning and developing my programming skills, I moved to the Netherlands, to explore what the country had to offer for us programmers.
 It did not dissapoint me. But most importantly, as the Dutch say, the point is to not disappoint yourself.</p>
       </div>
-      <img src={utrechtPic} alt="Utrecht" />
+      <img src={utrechtPic} className="second-image" alt="Utrecht" />
       <div className="line3">
           <p>
             First iphone image of Utrecht.

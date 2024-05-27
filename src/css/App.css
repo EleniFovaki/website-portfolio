@@ -1,3 +1,4 @@
+
 .App {
   background-color: black;
   color: white;
@@ -12,23 +13,55 @@
 }
 
 .content img {
-  width: 200px;
+  width: 300px;
   height: auto;
-  margin-top: 20px;
-  margin-right: 550px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.description,
-.additional-info,
 .line {
   font-family: "Georgia, serif";
   font-size: 20px;
   margin-bottom: 20px;
 }
 
-.additional-info{
-  text-align:center;
+.description {
+  font-family: "Georgia, serif";
+  font-size: 30px;
+  text-align: left;
+}
+
+.line1 {
+  font-family: "Georgia, serif";
+  text-align: left;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.line2 {
+  font-family: "Georgia, serif";
+  font-size: 15px;
+  text-align: right;
+  margin-left: 500px;
+}
+
+.additional-info {
+  font-family: "Georgia, serif";
+  text-align: center;
+  font-size: 22px;
   margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.second-image {
+  width: 20%;
 }
 
 /* Navbar.css */
@@ -58,7 +91,6 @@
   margin-right: 13px;
   color: white;
 }
-
 
 ul {
   list-style-type: none;

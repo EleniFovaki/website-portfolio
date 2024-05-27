@@ -15,7 +15,7 @@ function Blog() {
             id: 1,
             title: 'Set up a Postgresql Database with me',
             date: new Date().toLocaleDateString(),
-            preview: 'Hello world! In this vlog...',
+            preview: 'Hello world! In this vlog we are going to set up a...',
             content: 'Full content of the first post...'
         },
         {
