@@ -15,10 +15,10 @@ You can check my work from my Github account, via the github icon on the right f
           </p>
         </div>
         <div className="line2">
-          <p>
+          
             My time is divided between the Netherlands and in Greece, but most likely in a window seat of an airplane.
             Or in a court playing tennis.
-          </p>
+          
         </div>
         <img src={profilePic} alt="Profile" />
         <p className="additional-info">After graduating from the Technological Institute of Crete, I moved back to Athens, which is my hometown, to pursue a carreer in web-development.
