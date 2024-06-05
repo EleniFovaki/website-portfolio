@@ -24,6 +24,13 @@ function Blog() {
             date: new Date().toLocaleDateString(),
             preview: 'This is the preview of the second post...',
             content: 'Full content of the second post...'
+        },
+        {
+            id: 3,
+            title: 'Entry 03',
+            date: new Date().toLocaleDateString(),
+            preview: 'This is the preview of the third post...',
+            content: 'Full content of the second post...'
         }
         // Add more posts as needed
     ]);

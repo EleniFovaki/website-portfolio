@@ -66,9 +66,9 @@ function DrawerAppBar(props) {
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontFamily:"Georgia, serif" }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontFamily:"Georgia, serif"}}
           >
-            Eleni Fovaki
+            <Link to="/">Eleni Fovaki</Link>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' }, fontFamily: 'Georgia, serif' }}>
             {navItems.map((item) => (

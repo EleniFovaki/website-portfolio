@@ -119,3 +119,9 @@ a {
     margin-top: 10px;
     /* Adjust as needed for spacing */
 }
+
+.line4 {
+  font-family: "Georgia, serif";
+  font-size: 25px;
+  text-align: center;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import profilePic from './images/IMG_2405.jpg';
 import utrechtPic from './images/utrecht.jpg';
+import { Link } from 'react-router-dom'; // Import Link component
 
 function Home() {
   return (
@@ -29,6 +30,11 @@ It did not dissapoint me. But most importantly, as the Dutch say, the point is t
       <div className="line3">
           <p>
             First iphone image of Utrecht.
+          </p>
+        </div>
+        <div className="line4">
+          <p>
+            Questions? <Link to="/contact">Say hi.</Link>
           </p>
         </div>
     </div>
