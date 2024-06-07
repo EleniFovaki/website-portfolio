@@ -7,6 +7,7 @@
     flex-direction: column;
     min-height: 100vh;
     color: white;
-        /* Add some padding for better spacing */
+    /* Add some padding for better spacing */
     font-family: "Georgia, serif";
+    text-align:center;
 }
