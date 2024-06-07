@@ -20,7 +20,7 @@ function Blog() {
         },
         {
             id: 2,
-            title: 'Entry 02',
+            title: 'Learn the Redis basics with me',
             date: new Date().toLocaleDateString(),
             preview: 'This is the preview of the second post...',
             content: 'Full content of the second post...'
@@ -49,7 +49,7 @@ function Blog() {
                         </h2>
                         <p>{post.date}</p>
                         <p>{post.preview}</p>
-                        <Link to={`/post/${post.id}`}>Read more...</Link>
+                        <Link to={`/posts/${post.id}`}>Read more...</Link>
                     </div>
                 );
             })}

@@ -8,7 +8,6 @@ import Blog from './Blog';
 import Posts from './Posts';
 
 function App() {
-  console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
   return (
     <BrowserRouter>
       <div>

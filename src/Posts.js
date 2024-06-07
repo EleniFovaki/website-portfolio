@@ -1,47 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
+import Post1 from './postsdata/Post1';
+import Post2 from './postsdata/Post2';
 
-const initialPosts = [
-    {
-        id: 1,
-        title: 'Entry 01',
-        date: new Date().toLocaleDateString(),
-        preview: 'This is the preview of the first post...',
-        content: 'Full content of the first post...'
-    },
-    {
-        id: 2,
-        title: 'Entry 02',
-        date: new Date().toLocaleDateString(),
-        preview: 'This is the preview of the second post...',
-        content: 'Full content of the second post...'
-    },
-    {
-        id: 3,
-        title: 'Entry 03',
-        date: new Date().toLocaleDateString(),
-        preview: 'This is the preview of the third post...',
-        content: 'Full content of the second post...'
-    }
-    // Add more posts as needed
-];
 
-function Post() {
+const postsMap = {
+    1: Post1,
+    2: Post2
+    
+};
+
+function Posts() {
     const { id } = useParams();
-    const [posts] = useState(initialPosts);
-    const post = posts.find(p => p.id === parseInt(id));
+    const PostComponent = postsMap[id];
 
-    if (!post) {
+    if (!PostComponent) {
         return <div>Post not found</div>;
     }
 
-    return (
-        <div className="post">
-            <h2>{post.title}</h2>
-            <p1>{post.date}</p1>
-            <p2>{post.content}</p2>
-        </div>
-    );
+    return <PostComponent />;
 }
 
-export default Post;
+export default Posts;

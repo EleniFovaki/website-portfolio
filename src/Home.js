@@ -22,9 +22,7 @@ You can check my work from my Github account, via the github icon on the right f
           
         </div>
         <img src={profilePic} alt="Profile" />
-        <p className="additional-info">After graduating from the Technological Institute of Crete, I moved back to Athens, which is my hometown, to pursue a carreer in web-development.
-After 3 years of learning and developing my programming skills, I moved to the Netherlands, to explore what the country had to offer for us programmers.
-It did not dissapoint me. But most importantly, as the Dutch say, the point is to not disappoint yourself.</p>
+        <p className="additional-info">After graduating with a bachelor's degree in Computer Science, I spent several years working as a developer. Over time, I became more fascinated with programming and the ability to work abroad and moved to the Netherlands to pursue a carreer in full stack development.</p>
       </div>
       <img src={utrechtPic} className="second-image" alt="Utrecht" />
       <div className="line3">

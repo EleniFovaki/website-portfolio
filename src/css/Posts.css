@@ -1,0 +1,12 @@
+.post {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    min-height: 100vh;
+    color: white;
+        /* Add some padding for better spacing */
+    font-family: "Georgia, serif";
+}
