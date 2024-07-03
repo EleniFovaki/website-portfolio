@@ -9,7 +9,8 @@ function Home() {
       <div className="content">
         <p className="description">My name is Eleni Fovaki. I am a greek software engineer based in the Netherlands.
 You can check my Github account, via the github icon on the right front of this page, to get a glimpse of my projects.
-Currently, I am interested in full-stack development and machine learning. I have contributed in large-scale programs that are used by hundreds of users worldwide.
+Currently, I am interested in full-stack development and machine learning. I have contributed in large-scale programs that are used by hundreds of users worldwide and developed 
+custom-made solutions for several local medium businesses.
         </p>
         <div className="line1">
           <p>
