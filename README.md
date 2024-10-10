@@ -17,9 +17,9 @@ Made with React.js and Material UI. Below is a glimpse of the first edition, bef
 
 1. Install the dependecies:
 
-npm install or yarn
+    npm install or yarn
 
 2. Start the development server:
 
-npm run start
+    npm run start
 
